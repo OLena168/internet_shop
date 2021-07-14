@@ -14,6 +14,13 @@
     margin: 0 auto;
 }
 
+.container__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 63px;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
@@ -524,7 +531,7 @@ ul.breadcrumb li {
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
         &__guide {
-            width: 290px;
+            width: 90%;
             height: 30px;
             border-left: 5px solid #EF5B70;
             border-bottom: 1px solid #EBEBEB;
@@ -560,15 +567,10 @@ details > summary::-webkit-details-marker {
     display: none;
 }
 
-.card-catalog {
-    margin-bottom: 19px;
-}
-
-.card_top,
-.card_middle,
-.card_bottom {
+.card__catalog {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
     margin-bottom: 30px;
 }
 
@@ -864,10 +866,6 @@ details > summary::-webkit-details-marker {
     height: 148px;
 }
 
-// .cart {
-//     margin-left: 230px;
-// }
-
 .cart {
     display: flex;
     justify-content: space-between;
@@ -1087,18 +1085,21 @@ details > summary::-webkit-details-marker {
     }
 }
 
-ul > li:before {
+.typewriter > li:before {
     content: '✔';
     color: #B1B1B1;
 }
 
-.typewriter h3, ul, li {
+.typewriter {
     overflow: hidden; 
     white-space: nowrap;
     animation: typing 3s steps(60),
     blink-caret .5s infinite;
-    color: #F16D7F;
     font-weight: inherit;
+
+    li {
+        color: #F16D7F;
+    }
 }
 
 @keyframes typing {
@@ -1110,6 +1111,10 @@ ul > li:before {
 
     .container {
         padding: 0;
+    }
+
+    .container__wrap {
+        justify-content: center;
     }
     
     .menu_left {
@@ -1145,10 +1150,6 @@ ul > li:before {
         display: block;
     }
 
-    .card_item_top {
-        margin-bottom: 17px;
-    }
-
     .benefits {
         height: 610px;
         flex-direction: column;
@@ -1177,25 +1178,8 @@ ul > li:before {
         width: 25%;
     }
 
-    .card-catalog {
-        display: flex;
-        flex-wrap: wrap;
+    .card__catalog {
         justify-content: center;
-    }
-
-    .card_top,
-    .card_middle {
-        display: block;
-        margin-bottom: 0;
-    }
-
-    .card_bottom {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .card_item_top:nth-last-child(3) {
-        margin-right: 16px;
     }
 
     .card_item_top:only-child(1) {
@@ -1204,6 +1188,11 @@ ul > li:before {
 }
 
 @media all and (max-width: 500px) {
+
+    .container__wrap {
+        justify-content: center;
+    }
+
     .header_bottom {
         background-image: none;
     }
@@ -1224,10 +1213,14 @@ ul > li:before {
         width: 100%;
     }
 
-    .container_wrap {
-        display: block;
-        margin-left: 2%;
+    .card__catalog {
+        justify-content: center;
     }
+
+    // .container_wrap {
+    //     display: block;
+    //     margin-left: 2%;
+    // }
 
     .benefits__left {
         width: 100%;
@@ -1245,6 +1238,12 @@ ul > li:before {
 
     .footer__top__left__par {
         font-size: 18px;
+    }
+
+    .nav__back__catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
