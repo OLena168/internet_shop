@@ -9,25 +9,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
   </head>
   <body>
-    <header class="header_top">
+    <header class="header__top">
       <div class="container menu">
-        <div class="menu_left">
+        <div class="menu__left">
           <a class="item" href="#"><img src="./image/logo.png" alt="logo" /></a>
           <a class="item" href="#"
             ><img src="./image/search.svg" alt="search"
           /></a>
         </div>
-        <div class="menu_right">
-          <a class="item" href="#"><img src="./image/menu.svg" alt="menu" /></a>
-          <a class="item" href="./registration.html"
+        <div class="menu__right">
+          <input type="checkbox" id="burger">
+          <label class="header__menu" for="burger">
+            &#9776;
+          </label>         
+          <nav class="header__nav nav">
+            <div class="nav__wrap">
+              <label class="nav__close" for="burger">X</label>
+              <h2 class="nav__title">MENU</h2>
+              <h3 class="nav__heading">MEN</h3>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="">Accessories</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Bags</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Denim</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">T-Shirts</a>
+                </li>
+              </ul>
+              <h3 class="nav__heading">WOMEN</h3>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="">Accessories</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Jackets & Coats</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Polos</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">T-Shirts</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Shirts</a>
+                </li>
+              </ul>
+              <h3 class="nav__heading">KIDS</h3>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="">Accessories</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Jackets & Coats</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Polos</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">T-Shirts</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Shirts</a>
+                </li>
+                <li class="nav__item">
+                  <a href="">Bags</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <a class="item" href="./registration.html" target="_blank"
             ><img src="./image/profile.svg" alt="profile"
           /></a>
-          <a class="item" href="#"
-            ><img src="./image/basket.svg" alt="basket"
+          <a class="item" href="./cart.html" target="_blank"><img src="./image/basket.svg" alt="basket"
           /></a>
         </div>
       </div>
@@ -47,7 +108,7 @@
       <div class="card">
         <div class="container card_flex">
           <div class="card_block">
-            <a class="link_card" href="#">
+            <a class="link_card" href="./catalog.html" target="_blank">
               <div class="card_text">
                 <span class="card_offer">30% OFF</span>
                 <h3 class="offer_text">FOR WOMEN</h3>
@@ -55,7 +116,7 @@
             >
           </div>
           <div class="card_block man">
-            <a class="link_card" href="#">
+            <a class="link_card" href="./catalog.html" target="_blank">
               <div class="card_text">
                 <span class="card_offer">HOT DEAL</span>
                 <h3 class="offer_text">FOR MEN</h3>
@@ -63,7 +124,7 @@
             >
           </div>
           <div class="card_block kids">
-            <a class="link_card" href="#">
+            <a class="link_card" href="./catalog.html" target="_blank">
               <div class="card_text">
                 <span class="card_offer">NEW ARRIVALS</span>
                 <h3 class="offer_text">FOR KIDS</h3>
@@ -87,7 +148,6 @@
         <p>Shop for items based on what we featured in this week</p>
       </div>
       <div class="container container__wrap">
-        
           <div class="card_item_top">
             <div class="item_top">
               <img src="./image/card1.png" alt="photo" />
@@ -101,7 +161,7 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="./catalog.html" target="_blanket">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
                 </div></a
@@ -131,7 +191,7 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="#">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
                 </div></a
@@ -161,7 +221,7 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="#">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
                 </div></a
@@ -178,8 +238,6 @@
               </div>
             </div>
           </div>
-        
-        
           <div class="card_item_top">
             <div class="item_top">
               <img src="./image/card4.png" alt="photo" />
@@ -193,11 +251,10 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="#">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
-                </div></a
-              >
+                </div></a>
               <div class="item_box_par">
                 <p>
                   Known for her sculptural takes on traditional tailoring,
@@ -223,11 +280,10 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="#">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
-                </div></a
-              >
+                </div></a>
               <div class="item_box_par">
                 <p>
                   Known for her sculptural takes on traditional tailoring,
@@ -253,11 +309,10 @@
               </div>
             </div>
             <div class="item_box">
-              <a class="link" href="#">
+              <a class="link" href="./product.html" target="_blanket">
                 <div class="item_box_head">
                   <h4>ELLERY X M'O CAPSULE</h4>
-                </div></a
-              >
+                </div></a>
               <div class="item_box_par">
                 <p>
                   Known for her sculptural takes on traditional tailoring,
