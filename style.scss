@@ -9,6 +9,13 @@
     width: 100%;
     margin: 0 auto;
     overflow:hidden;
+
+    &__catalog {
+        max-width: 1160px;
+        padding: 0 10px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 .header__top {
@@ -482,26 +489,23 @@
 
     &__btn {
         display: block;
+        background-color: #F26376;
+        width: 100px;
+        height: 53px;
+        border-radius: 0 23px 23px 0;
+        text-align: center;
+        color: #FFFFFF;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
 
-        &__text {
-            background-color: #F26376;
-            width: 100px;
-            height: 53px;
-            border-radius: 0 23px 23px 0;
-            text-align: center;
-            color: #FFFFFF;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            border: none;
-            cursor: pointer;
-        }
-
-        &__text:hover {
-            background-color: #E1E1E1;
-            color: #F26376;
-            font-weight: bold;
-        }
+    &__btn:hover {
+        background-color: #E1E1E1;
+        color: #F26376;
+        font-weight: bold;
     }
 }
 
