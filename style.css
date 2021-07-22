@@ -12,6 +12,13 @@
   overflow: hidden;
 }
 
+.container__catalog {
+  max-width: 1160px;
+  padding: 0 10px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .header__top {
   padding: 18px 0;
   background-color: #222222;
@@ -590,9 +597,6 @@
 
 .sub__btn {
   display: block;
-}
-
-.sub__btn__text {
   background-color: #F26376;
   width: 100px;
   height: 53px;
@@ -606,7 +610,7 @@
   cursor: pointer;
 }
 
-.sub__btn__text:hover {
+.sub__btn:hover {
   background-color: #E1E1E1;
   color: #F26376;
   font-weight: bold;
